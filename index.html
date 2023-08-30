@@ -79,6 +79,7 @@
         <!-- Teaser figure-->
         <figure>
           <a href="./files/teaser.png"><img src="./files/teaser.png" class="teaser"></a>
+		  
 <!--           <p style="font-size:13px" class="justified">We propose a novel deep learning system for single image HDR reconstruction by synthesizing visually pleasing details in the saturated areas. We introduce a new feature masking approach that reduces the contribution of the features computed on the saturated areas, to mitigate halo and checkerboard artifacts. To synthesize visually pleasing textures in the saturated regions, we adapt the VGG-based perceptual loss function to the HDR reconstruction application. Furthermore, to effectively train our network on limited HDR training data, we propose to pre-train the network on inpainting task. Our method can reconstruct regions with high luminance, such as the bright highlights of the windows (red inset), and generate visually pleasing textures (green insert). See Figure 7 for comparison against several other approaches. All images have been gamma corrected for display purposes.</p> -->
         </figure>
       </header>
@@ -89,6 +90,12 @@
         <p class="justified">A high dynamic range (HDR) image is commonly used to reveal stereo illumination, which is crucial for generating high-quality realistic rendering effects. Compared to the high-cost HDR imaging technique, low dynamic range (LDR) imaging provides a low-cost alternative and is preferable for interactive graphics applications. However, the limited LDR pixel bit depth significantly bothers accurate illumination estimation using LDR images. The conflict between the realism and promptness of illumination estimation for realistic rendering is yet to be resolved. In this paper, an efficient method that accurately infers illuminations of real-world scenes using LDR panoramic images is proposed. It estimates multiple lighting parameters, including locations, types and intensities of light sources. In our approach, a new algorithm that extracts illuminant characteristics during the exposure attenuation process is developed to locate light sources and outline their boundaries. To better predict realistic illuminations, a new deep learning model is designed to efficiently parse complex LDR panoramas and classify detected light sources. Finally, realistic illumination intensities are calculated by recovering the inverse camera response function and extending the dynamic range of pixel values based on previously estimated parameters of light sources. The reconstructed radiance map can be used to compute high-quality image-based lighting of virtual models. Experimental results demonstrate that the proposed method is capable of efficiently and accurately computing comprehensive illuminations using LDR images. Our method can be used to produce better realistic rendering results than existing approaches.</p>
 
         <!-- Download links -->
+
+	    <!-- Video embedding -->
+		<h1>Video</h1>
+		<div class="video-container">
+		  <iframe frameborder="0" class="video" src="./files/DemoVideo.mp4"></iframe>
+		</div>
 
 
         <h1>Downloads</h1>
@@ -115,17 +122,10 @@
         <p></p>
 
 
-        <!-- Video embedding -->
-		<h1>Video</h1>
-		<div class="video-container">
-		  <iframe frameborder="0" class="video" src="./files/DemoVideo.mp4"></iframe>
-		</div>
-
         <!-- Thanks -->
-
 <!--         <h1>Acknowledgments</h1>
         <p class="justified">
-          We thank the reviewers for their constructive comments. M. Santos is funded by the Brazilian agency CNPQ grant 161268/2018-8. T. Ren is partially supported by FACEPE grant APQ-0192- 1.03/14. N. Kalantari is in part funded by a TAMU T3 grant 246451. The website template was borrowed from <a href="https://joeylitalien.github.io/">Joey Litalien</a>.
+          We thank the reviewers for their constructive comments. The website template was borrowed from <a href="https://joeylitalien.github.io/">Joey Litalien</a>.
         </p> -->
 
 
