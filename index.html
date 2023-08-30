@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction
+  </title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="./files/style.css">
+  <link rel="stylesheet" href="./files/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./files/katex.min.css">
+  <link rel="stylesheet" href="./files/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": {
+  scale: 100
+}
+});
+</script><script type="text/javascript" src="./files/MathJax.js"></script></head>
+
+
+<!-- MathJax Script -->
+
+
+
+<body>
+  <div class="page-content">
+    <div class="wrapper">
+
+      <article class="post">
+
+        <header class="post-header">
+          <!-- Paper title -->
+          <h1 class="post-title">Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction</h1>
+
+          <!-- Authors -->
+          <ul class="authors">
+
+            <li>
+              <a href="https://github.com/AplusX">Haojie Cheng</a>,
+              University of Science and Technology of China
+            </li>
+
+            <li>
+              <a href="https://github.com/feimos32">Chunxiao Xu</a>,
+              University of Science and Technology of China
+            </li>
+
+            <li>
+             <a href="">Jiajun Wang</a>,
+             Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Science
+           </li>
+		    <li>
+             <a href="">Lingxiao Zhao</a>,
+             University of Science and Technology of China
+           </li>
+         </ul>
+
+         <!-- Journal/conference title -->
+         <p>In 
+          <i>Computer Graphics Forum (CGF)</i>, 2022<br>
+        </p>
+
+        <!-- Teaser figure-->
+        <figure>
+          <a href="./files/teaser.png"><img src="./files/teaser.png" class="teaser"></a>
+<!--           <p style="font-size:13px" class="justified">We propose a novel deep learning system for single image HDR reconstruction by synthesizing visually pleasing details in the saturated areas. We introduce a new feature masking approach that reduces the contribution of the features computed on the saturated areas, to mitigate halo and checkerboard artifacts. To synthesize visually pleasing textures in the saturated regions, we adapt the VGG-based perceptual loss function to the HDR reconstruction application. Furthermore, to effectively train our network on limited HDR training data, we propose to pre-train the network on inpainting task. Our method can reconstruct regions with high luminance, such as the bright highlights of the windows (red inset), and generate visually pleasing textures (green insert). See Figure 7 for comparison against several other approaches. All images have been gamma corrected for display purposes.</p> -->
+        </figure>
+      </header>
+
+      <div class="post-content">
+        <!-- Abstract -->
+        <h1>Abstract</h1>
+        <p class="justified">Monoscopic panorama provides the display of omnidirectional contents surrounding the viewer. An increasingly popular way to reconstruct a panorama is to stitch a collection of fisheye images. However, such non-planar views may result in problems such as distortions and boundary irregularities. In most cases, the computational expense for stitching non-planar images is also too high to satisfy real-time applications. In this paper, a novel monoscopic panorama reconstruction pipeline that produces better quad-fisheye image stitching results for omnidirectional environment viewing is proposed. The main idea is to apply mesh deformation for image alignment. To optimize inter-lens parallaxes, unwarped images are firstly cropped and reshuffled to facilitate the circular environment scene composition by the seamless ring-connection of the panorama borders. Several mesh constraints are then adopted to ensure a high alignment accuracy. After alignment, the boundary of the result is rectified to be rectangular to prevent gapping artifacts. We further extend our approach to video stitching. The temporal smoothness model is added to prevent unexpected artifacts in the panoramic videos. To support interactive applications, our stitching algorithm is programmed using CUDA. The camera motion and average gradient per video frame are further calculated to accelerate for synchronous real-life panoramic scene reconstruction and visualization. Experimental results demonstrate that our method has advantages in respects of alignment accuracy, adaptability and image quality of the stitching result.</p>
+
+        <!-- Download links -->
+
+
+        <h1>Downloads</h1>
+        <p>
+        </p><h3>Publication</h3>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+            <a href="./files/QuadFisheyeStitching.pdf">Paper, PDF (6.65MB)</a>
+          </li>
+        </ul>
+
+        <h3>Supplementals</h3>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+            <a href="./files/DemoVideo.mp4">Supplementary material, Video (95.4MB)</a>
+          </li>
+
+        </ul>
+        
+        <p></p>
+
+
+        <!-- Video embedding -->
+
+
+        <!-- Thanks -->
+
+<!--         <h1>Acknowledgments</h1>
+        <p class="justified">
+          We thank the reviewers for their constructive comments. M. Santos is funded by the Brazilian agency CNPQ grant 161268/2018-8. T. Ren is partially supported by FACEPE grant APQ-0192- 1.03/14. N. Kalantari is in part funded by a TAMU T3 grant 246451. The website template was borrowed from <a href="https://joeylitalien.github.io/">Joey Litalien</a>.
+        </p> -->
+
+
+        <!-- BibTeX citation -->
+
+        <h1>Cite</h1>
+        <blockquote class="justified">
+
+          <a href="https://github.com/AplusX">Haojie Cheng</a>,
+
+          <a href="https://github.com/feimos32">Chunxiao Xu</a>
+		  
+		  <a href="">Jiajun Wang</a>
+
+          and 
+
+          <a href="">Lingxiao Zhao</a>.
+
+          Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction. <i>Computer Graphics Forum (CGF)</i>, 2022, 41 (6), pp. 94-109.
+        </blockquote>
+
+<pre><code>@article{Cheng2022PanoRecon,
+  author  = "Cheng, Haojie and Xu, Chunxiao and Wang, Jiajun and Zhao, Lingxiao",
+  title   = "{Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction}",
+  journal = "Computer Graphics Forum",
+  year    = "2022",
+  month   = may,
+  doi     = {10.1111/cgf.14512},
+  pages   = "94--109"
+}
+</code></pre>
+
+
+
+     <!-- Other content -->
+
+
+   </div>
+
+ </article>
+
+</div>
+</div>
+
+<script src="https://kit.fontawesome.com/8aad4879fb.js" crossorigin="anonymous"></script>
+</body></html>
