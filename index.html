@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality
+    Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering
   </title>
   <meta name="description" content="">
 
@@ -40,7 +40,7 @@
 
         <header class="post-header">
           <!-- Paper title -->
-          <h1 class="post-title">Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality</h1>
+          <h1 class="post-title">Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering</h1>
 
           <!-- Authors -->
           <ul class="authors">
@@ -55,18 +55,13 @@
               University of Science and Technology of China
             </li>
 			
-			<li>
-             <a href="">Xujing Chen</a>,
-              University of Science and Technology of China
+		   <li>
+             <a href="">Jiajun Wang</a>,
+             Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Science
            </li>
 		   
 		    <li>
              <a href="">Zhenxin Chen</a>,
-             Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Science
-           </li>
-		   
-            <li>
-             <a href="">Jiajun Wang</a>,
              Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Science
            </li>
  
@@ -78,7 +73,7 @@
 
          <!-- Journal/conference title -->
          <p>In 
-          <i>IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR Adjunct)</i>, 2023<br>
+          <i>IEEE Transactions on Visualization and Computer Graphics (TVCG)</i>, 2022<br>
         </p>
 
         <!-- Teaser figure-->
@@ -92,14 +87,14 @@
       <div class="post-content">
         <!-- Abstract -->
         <h1>Abstract</h1>
-        <p class="justified">Interactive volume visualization using a mixed reality (MR) system helps provide users with an intuitive spatial perception of volumetric data. Due to sophisticated requirements of user interaction and vision when using MR head-mounted display (HMD) devices, the conflict between the realisticness and efficiency of direct volume rendering (DVR) is yet to be resolved. In this paper, a new MR visualization framework that supports interactive realistic DVR is proposed. An efficient illumination estimation method is used to identify the high dynamic range (HDR) environment illumination captured using a panorama camera. To improve the visual quality of Monte Carlo-based DVR, a new spatio-temporal denoising algorithm is designed. Based on a reprojection strategy, it makes full use of temporal coherence between adjacent frames and spatial coherence between the two screens of an HMD to optimize MR rendering quality. Several MR development modules are also developed for related devices to efficiently and stably display the DVR results in an MR HMD. Experimental results demonstrate that our framework can better support immersive and intuitive user perception during MR viewing than existing MR solutions.</p>
+        <p class="justified">A high dynamic range (HDR) image is commonly used to reveal stereo illumination, which is crucial for generating high-quality realistic rendering effects. Compared to the high-cost HDR imaging technique, low dynamic range (LDR) imaging provides a low-cost alternative and is preferable for interactive graphics applications. However, the limited LDR pixel bit depth significantly bothers accurate illumination estimation using LDR images. The conflict between the realism and promptness of illumination estimation for realistic rendering is yet to be resolved. In this paper, an efficient method that accurately infers illuminations of real-world scenes using LDR panoramic images is proposed. It estimates multiple lighting parameters, including locations, types and intensities of light sources. In our approach, a new algorithm that extracts illuminant characteristics during the exposure attenuation process is developed to locate light sources and outline their boundaries. To better predict realistic illuminations, a new deep learning model is designed to efficiently parse complex LDR panoramas and classify detected light sources. Finally, realistic illumination intensities are calculated by recovering the inverse camera response function and extending the dynamic range of pixel values based on previously estimated parameters of light sources. The reconstructed radiance map can be used to compute high-quality image-based lighting of virtual models. Experimental results demonstrate that the proposed method is capable of efficiently and accurately computing comprehensive illuminations using LDR images. Our method can be used to produce better realistic rendering results than existing approaches.</p>
 
         <!-- Download links -->
 
 	    <!-- Video embedding -->
 		<h1>Video</h1>
 		<div class="video-container">
-		  <iframe frameborder="0" class="video" src="https://youtu.be/OvbPDrfDdkg"></iframe>
+		  <iframe frameborder="0" class="video" src="https://www.youtube.com/embed/UngsVeLN3Sk?si=eaOid5NnlvzQodLJ"></iframe>
 		</div>
 
 
@@ -108,18 +103,18 @@
         </p><h3>Publication</h3>
         <ul class="fa-ul">
           <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
-            <a href="./files/ISMAR-Adjunct-Paper.pdf">Paper, PDF (10.2MB)</a>
+            <a href="./files/Fast_and_Accurate_Illumination_Estimation_Using_LDR_Panoramic_Images_for_Realistic_Rendering.pdf">Paper, PDF (10.2MB)</a>
           </li>
         </ul>
 
         <h3>Supplementals</h3>
         <ul class="fa-ul">
 		  <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
-            <a href="">Supplementary material, PDF (27.5MB)</a>
+            <a href="./files/Supplementary Material.pdf">Supplementary material, PDF (24.7MB)</a>
           </li>
 		  
           <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
-            <a href="https://drive.google.com/file/d/1vGyldUoijSV7JzGVXOgs4Y2QWJsRtbFc/view?usp=drive_link">Supplementary material, Video (168MB)</a>
+            <a href="https://drive.google.com/file/d/17-aAgpRNivT7XZ4BNZKMd5iKl-EwLREh/view?usp=drive_link">Supplementary material, Video (168MB)</a>
           </li>
 
         </ul>
@@ -143,26 +138,26 @@
 
           <a href="https://github.com/feimos32">Chunxiao Xu</a>
 		  
-		  <a href="">Xujing Chen</a>
+		  <a href="">Jiajun Wang</a>
 		  
 		  <a href="">Zhenxin Chen</a>
-		  
-		  <a href="">Jiajun Wang</a>
-
+		 
           and 
 
           <a href="">Lingxiao Zhao</a>.
 
-         Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality. <i>IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR Adjunct)</i>, 2023: 1-6, Accepted.
+         Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering. <i>IEEE Transactions on Visualization and Computer Graphics (TVCG)</i>, 2022, pp. 1-15, doi: 10.1109/TVCG.2022.3205614.
         </blockquote>
 
-		<pre><code>@article{Cheng2023MRrendering,
-		  author  = "Cheng, Haojie and Xu, Chunxiao and Chen, Xujing and Chen, Zhenxin and Wang, Jiajun and Zhao, Lingxiao",
-		  title   = "{Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality}",
-		  journal = "IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR Adjunct)",
-		  year    = "2023",
-		  pages   = "1--6"
-		}
+		<pre><code>@article{Cheng2022,
+  author   = "Cheng, Haojie and Xu, Chunxiao and Wang, Jiajun and Chen, Zhenxin and Zhao, Lingxiao",
+  title    = "{Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering}",
+  journal  = "IEEE Transactions on Visualization and Computer Graphics",
+  year     = "2022",
+  month    = Sep
+  doi      = {10.1109/TVCG.2022.3205614},
+  pages    = "1--15"
+}
 </code></pre>
 
 
