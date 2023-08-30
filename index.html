@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction
+    Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering
   </title>
   <meta name="description" content="">
 
@@ -40,7 +40,7 @@
 
         <header class="post-header">
           <!-- Paper title -->
-          <h1 class="post-title">Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction</h1>
+          <h1 class="post-title">Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering</h1>
 
           <!-- Authors -->
           <ul class="authors">
@@ -59,6 +59,12 @@
              <a href="">Jiajun Wang</a>,
              Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Science
            </li>
+		   
+		    <li>
+             <a href="">Zhenxin Chen</a>,
+             Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Science
+           </li>
+		   
 		    <li>
              <a href="">Lingxiao Zhao</a>,
              University of Science and Technology of China
@@ -67,7 +73,7 @@
 
          <!-- Journal/conference title -->
          <p>In 
-          <i>Computer Graphics Forum (CGF)</i>, 2022<br>
+          <i>IEEE Transactions on Visualization and Computer Graphics (TVCG)</i>, 2022<br>
         </p>
 
         <!-- Teaser figure-->
@@ -80,7 +86,7 @@
       <div class="post-content">
         <!-- Abstract -->
         <h1>Abstract</h1>
-        <p class="justified">Monoscopic panorama provides the display of omnidirectional contents surrounding the viewer. An increasingly popular way to reconstruct a panorama is to stitch a collection of fisheye images. However, such non-planar views may result in problems such as distortions and boundary irregularities. In most cases, the computational expense for stitching non-planar images is also too high to satisfy real-time applications. In this paper, a novel monoscopic panorama reconstruction pipeline that produces better quad-fisheye image stitching results for omnidirectional environment viewing is proposed. The main idea is to apply mesh deformation for image alignment. To optimize inter-lens parallaxes, unwarped images are firstly cropped and reshuffled to facilitate the circular environment scene composition by the seamless ring-connection of the panorama borders. Several mesh constraints are then adopted to ensure a high alignment accuracy. After alignment, the boundary of the result is rectified to be rectangular to prevent gapping artifacts. We further extend our approach to video stitching. The temporal smoothness model is added to prevent unexpected artifacts in the panoramic videos. To support interactive applications, our stitching algorithm is programmed using CUDA. The camera motion and average gradient per video frame are further calculated to accelerate for synchronous real-life panoramic scene reconstruction and visualization. Experimental results demonstrate that our method has advantages in respects of alignment accuracy, adaptability and image quality of the stitching result.</p>
+        <p class="justified">A high dynamic range (HDR) image is commonly used to reveal stereo illumination, which is crucial for generating high-quality realistic rendering effects. Compared to the high-cost HDR imaging technique, low dynamic range (LDR) imaging provides a low-cost alternative and is preferable for interactive graphics applications. However, the limited LDR pixel bit depth significantly bothers accurate illumination estimation using LDR images. The conflict between the realism and promptness of illumination estimation for realistic rendering is yet to be resolved. In this paper, an efficient method that accurately infers illuminations of real-world scenes using LDR panoramic images is proposed. It estimates multiple lighting parameters, including locations, types and intensities of light sources. In our approach, a new algorithm that extracts illuminant characteristics during the exposure attenuation process is developed to locate light sources and outline their boundaries. To better predict realistic illuminations, a new deep learning model is designed to efficiently parse complex LDR panoramas and classify detected light sources. Finally, realistic illumination intensities are calculated by recovering the inverse camera response function and extending the dynamic range of pixel values based on previously estimated parameters of light sources. The reconstructed radiance map can be used to compute high-quality image-based lighting of virtual models. Experimental results demonstrate that the proposed method is capable of efficiently and accurately computing comprehensive illuminations using LDR images. Our method can be used to produce better realistic rendering results than existing approaches.</p>
 
         <!-- Download links -->
 
@@ -90,14 +96,18 @@
         </p><h3>Publication</h3>
         <ul class="fa-ul">
           <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
-            <a href="./files/QuadFisheyeStitching.pdf">Paper, PDF (6.65MB)</a>
+            <a href="./files/Fast_and_Accurate_Illumination_Estimation_Using_LDR_Panoramic_Images_for_Realistic_Rendering.pdf">Paper, PDF (14.3MB)</a>
           </li>
         </ul>
 
         <h3>Supplementals</h3>
         <ul class="fa-ul">
+		  <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+            <a href="./files/Supplementary Material.pdf">Supplementary material, PDF (27.5MB)</a>
+          </li>
+		  
           <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
-            <a href="./files/DemoVideo.mp4">Supplementary material, Video (95.4MB)</a>
+            <a href="./files/DemoVideo.mp4">Supplementary material, Video (134MB)</a>
           </li>
 
         </ul>
@@ -126,22 +136,24 @@
           <a href="https://github.com/feimos32">Chunxiao Xu</a>
 		  
 		  <a href="">Jiajun Wang</a>
+		  
+		  <a href="">Zhenxin Chen</a>
 
           and 
 
           <a href="">Lingxiao Zhao</a>.
 
-          Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction. <i>Computer Graphics Forum (CGF)</i>, 2022, 41 (6), pp. 94-109.
+          Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering. <i>IEEE Transactions on Visualization and Computer Graphics (TVCG)</i>, 2022, pp. 1-15, doi: 10.1109/TVCG.2022.3205614.
         </blockquote>
 
-<pre><code>@article{Cheng2022PanoRecon,
-  author  = "Cheng, Haojie and Xu, Chunxiao and Wang, Jiajun and Zhao, Lingxiao",
-  title   = "{Quad-fisheye Image Stitching for Monoscopic Panorama Reconstruction}",
-  journal = "Computer Graphics Forum",
+<pre><code>@article{Cheng2022LightingEstimation,
+  author  = "Cheng, Haojie and Xu, Chunxiao and Wang, Jiajun and Chen, Zhenxin and Zhao, Lingxiao",
+  title   = "{Fast and Accurate Illumination Estimation Using LDR Panoramic Images for Realistic Rendering}",
+  journal = "IEEE Transactions on Visualization and Computer Graphics",
   year    = "2022",
-  month   = may,
-  doi     = {10.1111/cgf.14512},
-  pages   = "94--109"
+  month   = Sep
+  doi     = {10.1109/TVCG.2022.3205614},
+  pages   = "1--15"
 }
 </code></pre>
 
